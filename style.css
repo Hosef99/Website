@@ -1,0 +1,474 @@
+@font-face {
+    font-family: NexaBold;
+    src: url(Fonts/Nexa\ Bold.otf);
+}
+
+@font-face {
+    font-family: NexaLight;
+    src: url(/Fonts/Nexa\ Light.otf);
+}
+
+@media screen and (max-width: 991px) {
+    .proj-rev {
+        height: 400px;
+    }
+}
+
+@keyframes upAndDown {
+    0% { top: 0px; }
+    50% { top: 20px; }
+    100% { top: 0px; }
+  }
+
+html {
+    background-color: #030027;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.profile {
+    /* background-color: #fff1cb; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+    transition: transform 2s ease-in-out;
+}
+
+.profile h1 {
+    font-size: 80px;
+    margin-left: 20px;
+    font-family: NexaBold;
+    transition: transform 2s ease-in-out;
+}
+
+.container {
+    overflow-x: hidden;
+}
+
+.one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    height: max-content;
+    background-color: #151E3F;
+}
+
+.about {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 10%;
+    height: fit-content;
+    width: 50%;
+    font-family: NexaLight;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    margin: 0;
+}
+
+.about h1 {
+    font-size: 3vw;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.4vw;
+    color: white;
+}
+
+.aboutbox {
+    left: 10%;
+    height: 70%;
+    position: absolute;
+    width: 20%;
+    z-index: 1;
+    margin-top: 4%;
+}
+
+.aboutbox h1 {
+    transform: translateX(-20px);
+    font-size: 5vw;
+    font-family: NexaBold;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    top: 50px;
+    color: white;
+}
+
+.technology {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+    height: fit-content;
+    margin-bottom: 10vh;
+}
+
+.tech {
+    transform: translateX(25%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* center images horizontally */
+    align-items: center; /* center images vertically */
+    align-content: center;
+    gap: 10px;
+    height: 40%;
+    width: 40%;
+    margin-top: 20%;
+    font-family: NexaLight;
+    margin: 0;
+    border-radius: 10%;
+}
+
+.imgcon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 30%;
+    background-color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 1s ease-in-out;
+}
+
+.tech .imgcon {
+    width: 30vh;
+    height: 30vh;
+    border-radius: 30%;
+}
+
+.tech section {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.techbox {
+    right: 10vw;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 30%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.techbox h1 {
+    transform: translateX(-20px);
+    font-size: 5vw;
+    font-family: NexaBold;
+    transition: transform 1s ease-in-out;
+    color: white;
+    margin: 0;
+    height: fit-content;
+}
+
+.description {
+    height: 40%;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.description p {
+    font-size: 1.4vw;
+    font-family: NexaLight;
+    color: white;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    text-align: justify;
+    align-items: center;
+}
+
+
+
+
+
+.projectwrap1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 80vh;
+    height: max-content;
+    overflow: hidden;
+    background-color: #151E3F;
+    /* margin-top: 5%; */
+    padding-bottom: 4%;
+}
+
+.projectbox1 {
+    height: 100%;
+    width: 40%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.projectbox1 h1 {
+    font-size: 5vw;
+    font-family: NexaBold;
+    color: white;
+}
+
+.projects1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.project1 {
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.project1 img {
+    width: 50vw;
+    height: 28.16vw;
+    border-radius: 3%;
+    object-fit: cover;
+}
+
+.button {
+    display: flex;
+    border-radius: 4px;
+    background-color: #C16E70;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    width: 15vw;
+    height: 3vw;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 4%;
+    text-decoration: none;
+  }
+
+  .button span {
+    font-size: 1.7vw;
+    font-family: NexaLight;
+    align-items: center;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    text-decoration: none;
+  }
+
+  .button span:after {
+    content: '>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.projectbox1 h2 {
+    font-size: 2vw;
+    font-family: NexaBold;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    color: white;
+}
+
+.projectbox1 p {
+    font-size: 1.2vw;
+    font-family: NexaLight;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    color: white;
+}
+
+
+
+.projectwrap2 {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 80vh;
+    height: max-content;
+    overflow: hidden;
+    background-color:#030027;
+    padding-bottom: 4%;
+}
+
+.projects2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.project2 {
+    left: 2%;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectbox2 h2 {
+    font-size: 2vw;
+    font-family: NexaBold;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    color: white;
+}
+
+.projectbox2 p {
+    font-size: 1.2vw;
+    font-family: NexaLight;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    color: white;
+}
+
+.project2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.project2 img {
+    width: 50vw;
+    height: 28.16vw;
+    border-radius: 3%;
+    object-fit: cover;
+}
+
+.projectbox2 h1 {
+    font-size: 5vw;
+    font-family: NexaBold;
+    color: white;
+}
+
+.projectbox2 {
+    height: 100%;
+    width: 40%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.contactwrap {
+    background-color:#151E3F;
+}
+
+.contacts {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    height: max-content;
+    overflow: hidden;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    opacity: 0;
+}
+
+.contactbox {
+    height: 100%;
+    width: 40%;
+    z-index: 1;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    text-align: center;
+}
+
+.contactbox h1 {
+    font-size: 5vw;
+    font-family: NexaBold;
+    color: white;
+}
+
+.contactsImg {
+    position: relative;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+    animation: upAndDown 5s infinite ease-in-out;
+}
+
+.contact{
+    margin-top: 3%;
+    width: fit-content;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.contact img {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 100%;
+    object-fit: cover;
+    /* background-color: #FFFFFF; */
+}
+
+.clipboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    background-color: #5E3561;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    height: 4vw;
+    width: 15vw;
+    border-radius: 3%;
+}
+
+.clipboard h1 {
+    font-size: 1.4vw;
+    font-family: NexaLight;
+    color: white;
+}   
