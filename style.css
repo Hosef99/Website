@@ -223,7 +223,6 @@ body {
     height: 100%;
     width: 40%;
     z-index: 1;
-    opacity: 0;
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
@@ -246,7 +245,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
@@ -368,7 +366,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
@@ -389,7 +386,6 @@ body {
     height: 100%;
     width: 40%;
     z-index: 1;
-    opacity: 0;
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 

@@ -67,47 +67,5 @@ function decision(){
             phase = 2;
         }, 1100);
     }
-    else if (scrollPosition >= 1600 && phase == 2){
-        projectbox1Element.style.opacity = 1;
-        projectbox1Element.style.transform = "TranslateX(0px)";
-        project1Element.style.opacity = 1;
-        phase = 3;
-    }
-    else if (scrollPosition >= 2404 && phase == 3){
-        projectbox2Element.style.opacity = 1;
-        projectbox2Element.style.transform = "TranslateX(0px)";
-        project2Element.style.opacity = 1;
-        phase = 4;
-    }
-    else if (scrollPosition >= 3100 && phase == 4){
-        projectbox3Element.style.opacity = 1;
-        projectbox3Element.style.transform = "TranslateX(0px)";
-        project3Element.style.opacity = 1;
-        phase = 5;
-    }
-    else if (scrollPosition >= 3800 && phase == 5){
-        projectbox4Element.style.opacity = 1;
-        projectbox4Element.style.transform = "TranslateX(0px)";
-        project4Element.style.opacity = 1;
-        phase = 6;
-    }
-    else if (scrollPosition >= 4400 && phase == 6){
-        projectbox5Element.style.opacity = 1;
-        projectbox5Element.style.transform = "TranslateX(0px)";
-        project5Element.style.opacity = 1;
-        phase = 7;
-    }
-    else if (scrollPosition >= 5000 && phase == 7){
-        projectbox6Element.style.opacity = 1;
-        projectbox6Element.style.transform = "TranslateX(0px)";
-        project6Element.style.opacity = 1;
-        phase = 8;
-    }
-    else if (scrollPosition >= 5600 && phase == 8){
-        contactsElement.style.opacity = 1;
-        contactsElement.style.transform = "TranslateX(0px)";
-        // contactElement.style.opacity = 1;
-        phase = 9;
-    }
     ;
 }
