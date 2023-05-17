@@ -17,7 +17,6 @@ for (let i = 0; i < 9; i++) {
 
 for (let i = 0; i < 9; i++) {
     containerArray[i].addEventListener("mouseover", () => {
-        if (phase>=2){
             descPElement.innerHTML = descriptionArray[i];
             descPElement.style.opacity = 1;
             for (let j = 0; j < 9; j++) {
@@ -25,11 +24,10 @@ for (let i = 0; i < 9; i++) {
                     iconArray[j].style.opacity = 0.1;
                 }
             }
-        }
     });
 
     containerArray[i].addEventListener("mouseout", () => {
-        if(phase>= 2){
+
             descPElement.style.opacity = 0;
             
             for (let j = 0; j < 9; j++) {
@@ -37,7 +35,6 @@ for (let i = 0; i < 9; i++) {
                     iconArray[j].style.opacity = 1;
                 }
             }
-        }
         
     });
 }

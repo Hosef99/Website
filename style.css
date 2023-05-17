@@ -8,12 +8,6 @@
     src: url(Fonts/Nexa\ Light.otf);
 }
 
-@media screen and (max-width: 991px) {
-    .proj-rev {
-        height: 400px;
-    }
-}
-
 @keyframes upAndDown {
     0% { top: 0px; }
     50% { top: 20px; }
@@ -21,7 +15,8 @@
   }
 
 html {
-    background-color: #030027;
+    background-color: #181823;
+    /* background-color: #030027; */
     margin: 0;
 }
 
@@ -31,110 +26,115 @@ body {
     margin: 0;
 }
 
+hr {
+    width: 90%;
+    height: 5px;
+    /* background: black; */
+    background: #E9F8F9;
+}
+
 .profile {
-    /* background-color: #fff1cb; */
-    color: white;
+    color: #E9F8F9;
+    /* color: white; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
-.profile img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    margin-right: 20px;
-    object-fit: cover;
-    transition: transform 2s ease-in-out;
-}
-
-.profile h1 {
-    font-size: 80px;
-    margin-left: 20px;
-    font-family: NexaBold;
-    transition: transform 2s ease-in-out;
-}
-
-.container {
     overflow-x: hidden;
 }
 
-.one {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-    height: max-content;
-    background-color: #151E3F;
+.profile img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile h1 {
+    font-size: 100px;
+    margin-left: 20px;
+    font-family: NexaBold;
+    text-align: center;
 }
 
 .about {
-    flex-direction: column;
+    color: #E9F8F9;
+    /* color: white; */
+    font-family: NexaBold;
+    /* background-color: #151E3F; */
     display: flex;
     justify-content: center;
-    position: absolute;
-    right: 10%;
-    height: fit-content;
-    width: 50%;
-    font-family: NexaBold;
-    transition: all 1s ease-in-out;
-    opacity: 0;
-    margin: 0;
+    gap: 4vmin;
+    padding: 5% 10%;
 }
 
-.about h1 {
-    font-size: 3vw;
-    color: white;
-    margin-bottom: 20px;
+.about > div {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
 }
 
 .about p {
-    font-size: 1.4vw;
-    color: white;
+    text-align: justify;
+    font-size: 3vmin;
+    font-weight: 400;
+    margin: 0;
 }
 
-.aboutbox {
-    left: 10%;
-    height: 70%;
-    position: absolute;
-    width: 20%;
-    z-index: 1;
-    margin-top: 4%;
+.about h2 {
+    flex: 2;
+    font-size: 8vmin;
+    margin: 0;
 }
 
-.aboutbox h1 {
-    transform: translateX(-20px);
-    font-size: 5vw;
-    font-family: NexaBold;
-    opacity: 0;
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-    top: 50px;
-    color: white;
+.about h3 {
+    font-size: 5vmin;
+    margin: 0;
 }
 
 .technology {
+    color: #E9F8F9;
+    /* color: white; */
+    font-family: NexaBold;
+    /* background-color: #151E3F; */
     display: flex;
-    flex-direction: row;
-    margin-top: 10vh;
-    height: fit-content;
-    margin-bottom: 10vh;
+    justify-content: center;
+    gap: 8vmin;
+    padding: 5% 10%;
 }
 
-.tech {
-    transform: translateX(25%);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* center images horizontally */
-    align-items: center; /* center images vertically */
-    align-content: center;
-    gap: 10px;
-    height: 40%;
-    width: 40%;
-    margin-top: 20%;
-    font-family: NexaBold;
+.technology h2 {
+    font-size: 8vmin;
     margin: 0;
-    border-radius: 10%;
+}
+
+.technology p {
+    font-size: 1.6vw;
+    font-family: NexaBold;
+    color: white;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    text-align: justify;
+    /* align-items: center; */
+}
+
+#tech-title {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.tech-img {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2vmin;
+    font-family: NexaBold;
+    /* padding-top: 22vmin; */
+    width: 60vmin;
+    height: 60vmin;
 }
 
 .imgcon img {
@@ -143,65 +143,16 @@ body {
     object-fit: contain;
     border-radius: 30%;
     background-color: #ffffff;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out, transform 1s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 
-.tech .imgcon {
-    width: 30vh;
-    height: 30vh;
+.tech-img .imgcon {
+    width: 18vmin;
+    height: 18vmin;
     border-radius: 30%;
 }
 
-.tech section {
-    width: 100px;
-    height: 100px;
-    background-color: #ffffff;
-    opacity: 0;
-    transition: all 0.6s ease-in-out;
-    border-radius: 10px;
-    gap: 20px;
-}
-
-.techbox {
-    right: 10vw;
-    height: 100%;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    width: 30%;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.techbox h1 {
-    transform: translateX(-20px);
-    font-size: 5vw;
-    font-family: NexaBold;
-    transition: transform 1s ease-in-out;
-    color: white;
-    margin: 0;
-    height: fit-content;
-}
-
-.description {
-    height: 40%;
-    width: 100%;
-    margin-top: 10%;
-}
-
-.description p {
-    font-size: 1.4vw;
-    font-family: NexaBold;
-    color: white;
-    opacity: 1;
-    transition: all 0.3s ease-in-out;
-    text-align: justify;
-    align-items: center;
-}
+/* Responsive: 900px max width */
 
 
 
