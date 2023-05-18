@@ -36,14 +36,19 @@ body {
 
 hr {
 	width: 90%;
-	height: 5px;
 	/* background: black; */
-	background: #e9f8f9;
+	border-top: 5px solid #e9f8f9;
+}
+
+.proj-hr {
+    border: none;
+    border-top: 3px double #e9f8f9;
+    width: 70%;
 }
 
 .profile {
 	color: #e9f8f9;
-	/* color: white; */
+	/* color: #e9f8f9; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -51,7 +56,7 @@ hr {
 	align-items: center;
 	height: 100vh;
 	overflow-x: hidden;
-	padding: 5% 10%;
+	padding: 0 10% 5% 10%;
 }
 
 .profile img {
@@ -70,7 +75,7 @@ hr {
 
 .about {
 	color: #e9f8f9;
-	/* color: white; */
+	/* color: #e9f8f9; */
 	font-family: NexaBold;
 	/* background-color: #151E3F; */
 	display: flex;
@@ -105,18 +110,19 @@ hr {
 
 .technology {
 	color: #e9f8f9;
-	/* color: white; */
+	/* color: #e9f8f9; */
 	font-family: NexaBold;
 	/* background-color: #151E3F; */
 	display: flex;
 	justify-content: center;
 	gap: 7vw;
-	padding: 5% 10%;
+	padding: 5% 6% 5% 10%;
 }
 
 .technology h2 {
 	font-size: 8vmin;
 	margin: 0;
+    align-self: flex-start;
 }
 
 .technology p {
@@ -133,10 +139,13 @@ hr {
 	display: block;
 	font-size: 1.6vw;
 	font-family: NexaBold;
-	color: white;
+	color: #e9f8f9;
 	opacity: 1;
 	transition: all 0.3s ease-in-out;
 	text-align: justify;
+    align-items: center;
+    margin: 0;
+    margin-top: 1vw;
 	/* align-items: center; */
 }
 
@@ -145,12 +154,11 @@ hr {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
-	gap: 2vmin;
+	gap: 1vw;
 	font-family: NexaBold;
 	/* padding-top: 22vmin; */
-	width: 48vmin;
-	height: 48vmin;
-	margin-top: 6%;
+	width: 27vw;
+	height: 27vw;
 }
 
 .imgcon img {
@@ -163,8 +171,8 @@ hr {
 }
 
 .tech-img .imgcon {
-	width: 14vmin;
-	height: 14vmin;
+	width: 8vw;
+	height: 8vw;
 	border-radius: 30%;
 }
 
@@ -231,7 +239,7 @@ hr {
 	font-size: 28px;
 	width: 15vw;
 	height: 3vw;
-	transition: all 0.5s;
+	transition: transform 0.5s;
 	cursor: pointer;
 	margin-top: 4%;
 	text-decoration: none;
@@ -244,7 +252,7 @@ hr {
 	cursor: pointer;
 	display: inline-block;
 	position: relative;
-	transition: 0.5s;
+	transition: all 0.5s;
 	text-decoration: none;
 }
 
@@ -253,17 +261,74 @@ hr {
 	position: absolute;
 	opacity: 0;
 	top: 0;
-	right: -20px;
+	right: -2vmin;
 	transition: 0.5s;
 }
 
 .button:hover span {
-	padding-right: 25px;
+	padding-right: 2vmin;
 }
 
 .button:hover span:after {
 	opacity: 1;
 	right: 0;
+}
+
+
+
+.contact {
+    padding: 5% 10% 0 10%;
+	display: flex;
+    gap: 5vmin;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 8vmin;
+    margin: 0;
+}
+
+.contact > img {
+    object-fit: cover;
+    width: 60vmin;
+    height: 60vmin;
+    border-radius: 50%;
+}
+
+.contact-icon {
+    display: flex;
+    gap: 4vmin;
+}
+
+.contact-icon img {
+    object-fit: cover;
+    width: 15vmin;
+    height: 15vmin;
+    border-radius: 50%;
+}
+
+.clipboard {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	right: 3%;
+	bottom: 3%;
+	background-color: #5e3561;
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+	height: 4vw;
+	width: 15vw;
+	border-radius: 3%;
+}
+
+.clipboard h1 {
+	font-size: 1.4vw;
+	font-family: NexaBold;
+	color: #e9f8f9;
 }
 
 /* Responsive: 900px max width
@@ -315,175 +380,30 @@ Deal with technology part and profile part */
 	.about > div {
 		margin-top: 5%;
 	}
+}
 
+/* Media Query for projects section */
+@media (max-width: 1200px) {
     .project {
         flex-direction: column;
         text-align: center;
+        gap: 10px;
+    }
+
+    .project-img {
+        margin-top: 0;
     }
 
     .project-img img {
         width: 100%;
-        height: 300px;
+        height: 62.5%;
     }
-}
 
-.projectwrap2 {
-	display: flex;
-	/* justify-content: center; */
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	min-height: 80vh;
-	height: max-content;
-	overflow: hidden;
-	background-color: #030027;
-	padding-bottom: 4%;
-}
-
-.projects2 {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin-top: 5%;
-}
-
-.project2 {
-	left: 2%;
-	margin: 20px;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.projectbox2 h2 {
-	font-size: 2vw;
-	font-family: NexaBold;
-	transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-	color: white;
-}
-
-.projectbox2 p {
-	font-size: 1.2vw;
-	font-family: NexaBold;
-	transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-	color: white;
-}
-
-.project2 {
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	transition: opacity 1s ease-in-out;
-}
-
-.project2 img {
-	width: 50vw;
-	height: 28.16vw;
-	border-radius: 3%;
-	object-fit: cover;
-}
-
-.projectbox2 h1 {
-	font-size: 5vw;
-	font-family: NexaBold;
-	color: white;
-}
-
-.projectbox2 {
-	height: 100%;
-	width: 40%;
-	z-index: 1;
-	transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-}
-
-.contactwrap {
-	background-color: #151e3f;
-}
-
-.contacts {
-	display: flex;
-	/* justify-content: center; */
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	min-height: 100vh;
-	height: max-content;
-	overflow: hidden;
-	transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-}
-
-.contactbox {
-	height: 100%;
-	width: 40%;
-	z-index: 1;
-	transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-	text-align: center;
-}
-
-.contactbox h1 {
-	font-size: 5vw;
-	font-family: NexaBold;
-	color: white;
-}
-
-.contactsImg {
-	position: relative;
-	width: 25vw;
-	height: 25vw;
-	border-radius: 50%;
-	margin-right: 20px;
-	object-fit: cover;
-	animation: upAndDown 5s infinite ease-in-out;
-}
-
-.contact {
-	margin-top: 3%;
-	width: fit-content;
-	height: max-content;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	gap: 20px;
-}
-
-.contact a {
-	width: 5vw;
-	height: 5vw;
-	border-radius: 100%;
-}
-
-.contact img:hover {
-	transform: translateY(-5px);
-}
-
-.contact img {
-	width: 5vw;
-	height: 5vw;
-	border-radius: 100%;
-	object-fit: cover;
-	/* background-color: #FFFFFF; */
-	transition: transform 0.2s ease-in-out;
-}
-
-.clipboard {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: fixed;
-	right: 3%;
-	bottom: 3%;
-	background-color: #5e3561;
-	opacity: 0;
-	transition: all 0.5s ease-in-out;
-	height: 4vw;
-	width: 15vw;
-	border-radius: 3%;
-}
-
-.clipboard h1 {
-	font-size: 1.4vw;
-	font-family: NexaBold;
-	color: white;
+    .button {
+        width: 30vw;
+        height: 6vw;
+    }
+    .button span {
+        font-size: 3.4vw;
+    }
 }
