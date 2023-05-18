@@ -39,9 +39,11 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 5%;
     align-items: center;
     height: 100vh;
     overflow-x: hidden;
+    padding: 5% 10%;
 }
 
 .profile img {
@@ -52,8 +54,8 @@ hr {
 }
 
 .profile h1 {
-    font-size: 100px;
-    margin-left: 20px;
+    margin: 0;
+    font-size: 5rem;
     font-family: NexaBold;
     text-align: center;
 }
@@ -100,7 +102,7 @@ hr {
     /* background-color: #151E3F; */
     display: flex;
     justify-content: center;
-    gap: 8vmin;
+    gap: 7vw;
     padding: 5% 10%;
 }
 
@@ -110,6 +112,17 @@ hr {
 }
 
 .technology p {
+    display: none;
+}
+
+#tech-title {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+#tech-title p {
+    display: block;
     font-size: 1.6vw;
     font-family: NexaBold;
     color: white;
@@ -117,12 +130,6 @@ hr {
     transition: all 0.3s ease-in-out;
     text-align: justify;
     /* align-items: center; */
-}
-
-#tech-title {
-    flex: 3;
-    display: flex;
-    flex-direction: column;
 }
 
 .tech-img {
@@ -133,8 +140,8 @@ hr {
     gap: 2vmin;
     font-family: NexaBold;
     /* padding-top: 22vmin; */
-    width: 60vmin;
-    height: 60vmin;
+    width: 48vmin;
+    height: 48vmin;
 }
 
 .imgcon img {
@@ -147,14 +154,60 @@ hr {
 }
 
 .tech-img .imgcon {
-    width: 18vmin;
-    height: 18vmin;
+    width: 14vmin;
+    height: 14vmin;
     border-radius: 30%;
 }
 
-/* Responsive: 900px max width */
+/* Responsive: 900px max width
+Deal with technology part and profile part */
+@media (max-width: 900px){
+    .technology {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .technology p {
+        display: block;
+        text-align: justify;
+        margin: 0;
+    }
 
+    #tech-title p {
+        display: none;
+    }
+
+    .tech-img {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1vmin;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .tech-img .imgcon {
+        width: 14vmin;
+        height: 14vmin;
+        border-radius: 30%;
+    }
+
+    .technology h2 {
+        margin: 0;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about p {
+        font-size: 4vmin;
+    }
+
+    .about > div {
+        margin-top: 5%;
+    }
+}
 
 
 
