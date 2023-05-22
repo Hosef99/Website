@@ -355,11 +355,11 @@ p {
 	gap: 4vmin;
 }
 
-.contact-icon img {
+.contact-icon svg,img {
 	object-fit: cover;
-	width: 15vmin;
-	height: 15vmin;
-	border-radius: 50%;
+	width: 8vmin;
+	height: 8vmin;
+	/* border-radius: 50%; */
 }
 
 .clipboard {
