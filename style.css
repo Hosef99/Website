@@ -388,6 +388,7 @@ Deal with technology part and profile part */
 	.technology {
 		flex-direction: column;
 		text-align: center;
+        padding: 5% 10%;
 	}
 
 	.technology p {
