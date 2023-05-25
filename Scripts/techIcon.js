@@ -28,6 +28,10 @@ window.addEventListener("resize", function () {
 	width = window.innerWidth;
 	if (width <= 900) {
 		setActive = false;
+        for (let i = 0; i < 9; i++) {
+            iconArray[i].style.opacity = 1;
+            
+        }
 	} else {
 		setActive = true;
 	}

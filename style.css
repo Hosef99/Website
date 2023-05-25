@@ -1,10 +1,10 @@
 @font-face {
-	font-family: NexaBold;
+	font-family: 'Open Sans', sans-serif;;
 	src: url(Fonts/Nexa\ Bold.otf);
 }
 
 @font-face {
-	font-family: NexaBold;
+	font-family: 'Open Sans', sans-serif;;
 	src: url(Fonts/Nexa\ Light.otf);
 }
 
@@ -25,7 +25,7 @@ html {
 	/* background-color: #030027; */
 	margin: 0;
 	color: #d1d1d1;
-	font-family: NexaBold;
+	font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -53,7 +53,15 @@ a {
 }
 
 p {
-    line-height: 2rem;
+    line-height: 5vmin;
+}
+
+h2 {
+    font-size: 5vw;
+}
+
+h3 {
+    font-size: 5vmin;
 }
 
 .green {
@@ -128,7 +136,7 @@ p {
 
 .about {
 	/* color: #e9f8f9; */
-	font-family: NexaBold;
+	font-family: 'Open Sans', sans-serif;;
 	/* background-color: #151E3F; */
 	display: flex;
 	justify-content: center;
@@ -146,25 +154,22 @@ p {
 	text-align: justify;
 	font-size: 3vmin;
 	font-weight: 400;
-	margin: 0;
 }
 
 .about h2 {
 	flex: 2;
-	font-size: 8vmin;
 	margin: 0;
 	font-family: "Sora", sans-serif;
 }
 
 .about h3 {
-	font-size: 5vmin;
 	margin: 0;
 	font-family: "Sora", sans-serif;
 }
 
 .technology {
 	/* color: #e9f8f9; */
-	font-family: NexaBold;
+	font-family: 'Open Sans', sans-serif;;
 	/* background-color: #151E3F; */
 	display: flex;
 	justify-content: center;
@@ -173,7 +178,6 @@ p {
 }
 
 .technology h2 {
-	font-size: 8vmin;
 	margin: 0;
 	align-self: flex-start;
 	font-family: "Sora", sans-serif;
@@ -192,7 +196,8 @@ p {
 #tech-title p {
 	display: block;
 	font-size: 1.6vw;
-	font-family: NexaBold;
+    line-height: 2vw;
+	font-family: 'Open Sans', sans-serif;;
 	opacity: 1;
 	transition: all 0.3s ease-in-out;
 	text-align: justify;
@@ -203,12 +208,13 @@ p {
 }
 
 .tech-img {
+    align-self: center;
 	flex: 1;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
 	gap: 1vw;
-	font-family: NexaBold;
+	font-family: 'Open Sans', sans-serif;;
 	/* padding-top: 22vmin; */
 	width: 27vw;
 	height: 27vw;
@@ -236,13 +242,11 @@ p {
 }
 
 .project h2 {
-	font-size: 8vmin;
 	margin: 0;
 	font-family: "Sora", sans-serif;
 }
 
 .project h3 {
-	font-size: 5vmin;
 	margin: 5% 0 0 0;
 	font-family: "Sora", sans-serif;
 }
@@ -300,7 +304,7 @@ p {
 
 .button span {
 	font-size: 1.7vw;
-	font-family: NexaBold;
+	/* font-family: 'Open Sans', sans-serif;; */
 	align-items: center;
 	cursor: pointer;
 	display: inline-block;
@@ -319,7 +323,7 @@ p {
 }
 
 .button:hover span {
-	padding-right: 2vmin;
+	padding-right: 3vmin;
 }
 
 .button:hover span:after {
@@ -379,7 +383,7 @@ p {
 
 .clipboard h1 {
 	font-size: 1.4vw;
-	font-family: NexaBold;
+	font-family: 'Open Sans', sans-serif;;
 }
 
 /* Responsive: 900px max width
@@ -389,14 +393,20 @@ Deal with technology part and profile part */
 		flex-direction: column;
 		text-align: center;
         padding: 5% 10%;
+        gap: 3vw;
 	}
 
 	.technology p {
 		display: block;
 		text-align: justify;
-		margin: 0;
-		font-size: 3vmin;
+		font-size: 4vmin;
 	}
+
+    .technology h2 {
+        align-self: center;
+        font-size: 8vmin;
+        margin: 0;
+    }
 
 	#tech-title p {
 		display: none;
@@ -416,14 +426,15 @@ Deal with technology part and profile part */
 		border-radius: 30%;
 	}
 
-	.technology h2 {
-		margin: 0;
-	}
-
 	.about {
 		flex-direction: column;
 		text-align: center;
+        gap: 0;
 	}
+
+    .about h2 {
+        font-size: 8vmin;
+    }
 
 	.about p {
 		font-size: 4vmin;
@@ -431,11 +442,8 @@ Deal with technology part and profile part */
 
 	.about > div {
 		margin-top: 5%;
+        gap: 2vmin;
 	}
-
-    p {
-        line-height: 1.4rem;
-    }
 }
 
 /* Media Query for projects section */
@@ -445,6 +453,14 @@ Deal with technology part and profile part */
 		text-align: center;
 		gap: 10px;
 	}
+
+    .project h2 {
+        font-size: 8vmin;
+    }
+
+    .project p {
+        font-size: 4vmin;
+    }
 
 	.project-img {
 		margin-top: 0;
